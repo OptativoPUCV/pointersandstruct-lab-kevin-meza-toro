@@ -80,6 +80,7 @@ Vector * crearVector(int n) {
   Vector *v;
   v = (Vector *)malloc(sizeof(Vector) * n);
   v->datos = (int *)calloc(n, sizeof(int));
+  v->capacidad = n;
    return v;
 }
 
