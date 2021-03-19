@@ -145,7 +145,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   //6 7
   int j = 0;
   for(i = 0; i<4; i++){
-    if(i==3){
+    if(i==2){
       c->datos[j + 1] = c->datos[j + 1] + obtenerValor(v, i);
     }else{
       c->datos[j] = c->datos[j] + obtenerValor(v, i);
