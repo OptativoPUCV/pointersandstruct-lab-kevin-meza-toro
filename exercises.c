@@ -120,8 +120,6 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-  Vector *v;
-  v = crearVector(2);
   Vector *a;
   a = crearVector(2);
   Vector *b;
@@ -131,8 +129,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   asignarValor(b, 0,b1);
   asignarValor(a, 1,a2);
   asignarValor(b, 1,b2);
-  printf("%i", b->datos[0]);
-  sumaV(a, b, v);
+  sumaV(a, b, c);
 
   
 }
